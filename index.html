@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter your city name" spellcheck="false" />
+            <button>
+                <img class="button" src="./images/magnify-1.1s-200px.svg" alt="" />
+            </button>
+        </div>
+        <div class="error">
+            <img src="./images/no-results.png" alt="Invalid city name!">
+            <h5>Invalid City Name!!</h5>
+        </div>
+        <div class="weather">
+            <img src="./images/rain.png" alt="" class="weather-img" />
+            <h1 class="temp">23°c</h1>
+            <h2 class="city">Bhandara</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="./images/humidity.png" />
+                    <div class="info">
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./images/wind.png" alt="" />
+                    <div class="info">
+                        <p class="wind">15 km/hr</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://openweathermap.org/">
+            <p class="footer">
+                Data provided in part by
+                <img src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png"
+                    alt="open weather" />
+            </p>
+        </a>
+    </div>
+
+</body>
+
+</html>
